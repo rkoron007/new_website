@@ -1,19 +1,7 @@
-# Kross By Themefisher
+# Rose's Personal Website
 
-Kross is a creative, sleek and modern personal portfolio website template with a gorgeous appearance. It appears with an amazing, stunning graphics.
+This is my slightly tweaked version of Kross By Themefisher
 
-<!-- demo -->
-## Example Site
-
-| [![](screenshots/homepage.png)](https://demo.themefisher.com/kross/) | [![](screenshots/about.png)](https://demo.themefisher.com/kross/about.html) | [![](screenshots/portfolio.png)](https://demo.themefisher.com/kross/portfolio.html) |
-|:---:|:---:|:---:|
-| **Home**  | `**About**  | **Portfolio** |
-| [![](screenshots/blog.png)](https://demo.themefisher.com/kross/blog.html) | [![](screenshots/blog-details.png)](https://demo.themefisher.com/kross/blo~g-single.html) | [![](screenshots/contact.png)](https://demo.themefisher.com/kross/contact.html) |
-| **Blog** | **Blog Details** | **Contact** |
-
-👉🏻[View Live Preview](https://demo.themefisher.com/kross/)
-
-<!-- pages -->
 ## Pages
 
 * **Homepage**
@@ -23,30 +11,6 @@ Kross is a creative, sleek and modern personal portfolio website template with a
 * **Blog Details**
 * **Contact**
 
-<!-- download -->
-## Download And installation
-
-Download this template from [Github](https://github.com/themefisher/kross/archive/main.zip)
-
-<!-- installation -->
-### Basic Usages
-
-After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
-
-### Advanced Usage
-
-For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
-
-#### Install prerequisites (once for a machine)
-
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Gulp Installation:** Install gulp globally from your terminal
-
-```
-npm install --global gulp-cli
-```
-
-Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
 
 #### Local setup
 
@@ -78,18 +42,8 @@ Now you get a `theme` folder that has all the changes you have made. you can use
 
 👉🏻 [visit documentation](https://docs.themefisher.com/kross/)
 
-<!-- reporting issue -->
-## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Kross Template. Please Search [existing issues](https://github.com/themefisher/Kross-Creative-Portfolio-Template/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/Kross-Creative-Portfolio-Template/issues).
-
-<!-- support -->
-## Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
-
-<!-- licence -->
+<!-- License -->
 ## License
 
 Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)

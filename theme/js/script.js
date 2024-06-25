@@ -60,21 +60,21 @@
       c9left = document.getElementById('l9').offsetLeft,
       c9top = document.getElementById('l9').offsetTop;
 
-    parallaxBox.onmousemove = function (event) {
-      event = event || window.event;
-      var x = event.clientX - parallaxBox.offsetLeft,
-        y = event.clientY - parallaxBox.offsetTop;
+    // parallaxBox.onmousemove = function (event) {
+      // event = event || window.event;
+      // var x = event.clientX - parallaxBox.offsetLeft,
+      //   y = event.clientY - parallaxBox.offsetTop;
 
-      /*  mouseParallax('l1', c1left, c1top, x, y, 5); */
-      mouseParallax('l2', c2left, c2top, x, y, 25);
-      mouseParallax('l3', c3left, c3top, x, y, 20);
-      mouseParallax('l4', c4left, c4top, x, y, 35);
-      mouseParallax('l5', c5left, c5top, x, y, 30);
-      mouseParallax('l6', c6left, c6top, x, y, 45);
-      mouseParallax('l7', c7left, c7top, x, y, 30);
-      mouseParallax('l8', c8left, c8top, x, y, 25);
-      mouseParallax('l9', c9left, c9top, x, y, 40);
-    };
+      // /*  mouseParallax('l1', c1left, c1top, x, y, 5); */
+      // mouseParallax('l2', c2left, c2top, x, y, 25);
+      // mouseParallax('l3', c3left, c3top, x, y, 20);
+      // mouseParallax('l4', c4left, c4top, x, y, 35);
+      // mouseParallax('l5', c5left, c5top, x, y, 30);
+      // mouseParallax('l6', c6left, c6top, x, y, 45);
+      // mouseParallax('l7', c7left, c7top, x, y, 30);
+      // mouseParallax('l8', c8left, c8top, x, y, 25);
+      // mouseParallax('l9', c9left, c9top, x, y, 40);
+    // };
   };
 
   function mouseParallax(id, left, top, mouseX, mouseY, speed) {
@@ -177,3 +177,28 @@
     }, 1000);
   });
 })(jQuery);
+
+// Add this to your script.js file
+$(document).ready(function() {
+    // Smooth scrolling for navigation links
+    $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top - 70 // Adjust for fixed header
+            }, 1000);
+        }
+    });
+
+    // Add active class to navigation items on scroll
+    $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop();
+        $('section').each(function(i) {
+            if ($(this).position().top <= scrollDistance + 100) {
+                $('.navbar-nav a.active').removeClass('active');
+                $('.navbar-nav a').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
+});

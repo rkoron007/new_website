@@ -415,6 +415,11 @@ textarea.form-control {
   }
 }
 
+#logo {
+  height: 50px;
+  width: 50px;
+}
+
 .navbar .nav-item .nav-link {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
