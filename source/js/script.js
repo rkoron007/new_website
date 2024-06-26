@@ -162,7 +162,7 @@
     clearTimeout(scrollTimeout);
 
     if (window.scrollY > 0) {
-      navbar.style.top = '-100px'; // Adjust based on navbar height
+      navbar.style.top = '-250px'; // Adjust based on navbar height
     }
 
     scrollTimeout = setTimeout(() => {
