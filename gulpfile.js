@@ -21,8 +21,8 @@ var path = {
     images: "source/images/**/*.+(png|jpg|gif|svg)",
   },
   build: {
-    dirBuild: "theme/",
-    dirDev: "theme/",
+    dirBuild: "theme",
+    dirDev: "source/build",
   },
 };
 
@@ -71,7 +71,7 @@ gulp.task("scss:build", function () {
     GITHUB: https://github.com/themefisher/
     `)
     )
-    .pipe(gulp.dest(path.build.dirDev + "css/"))
+    .pipe(gulp.dest(path.build.dirDev + "/css/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -91,7 +91,7 @@ gulp.task("js:build", function () {
   GITHUB: https://github.com/themefisher/
   `)
     )
-    .pipe(gulp.dest(path.build.dirDev + "js/"))
+    .pipe(gulp.dest(path.build.dirDev + "/js/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -103,7 +103,7 @@ gulp.task("js:build", function () {
 gulp.task("images:build", function () {
   return gulp
     .src(path.src.images)
-    .pipe(gulp.dest(path.build.dirDev + "images/"))
+    .pipe(gulp.dest(path.build.dirDev + "/images/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -115,7 +115,7 @@ gulp.task("images:build", function () {
 gulp.task("plugins:build", function () {
   return gulp
     .src(path.src.plugins)
-    .pipe(gulp.dest(path.build.dirDev + "plugins/"))
+    .pipe(gulp.dest(path.build.dirDev + "/plugins/"))
     .pipe(
       bs.reload({
         stream: true,
@@ -175,3 +175,4 @@ gulp.task(
     "plugins:build"
   )
 );
+
